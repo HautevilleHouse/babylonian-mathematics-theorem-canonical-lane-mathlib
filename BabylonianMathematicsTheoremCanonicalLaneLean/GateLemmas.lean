@@ -1,0 +1,13 @@
+import HautevilleHouse.BabylonianMathematicsTheoremCanonicalLaneLean.BridgeLemmas
+
+namespace HautevilleHouse
+namespace BabylonianMathematicsTheoremCanonicalLaneLean
+
+def gateClosed (A : AdmissibleClass) : Prop :=
+  A.endpointSatisfied ∨ A.remainderRecorded
+
+theorem gate_from_admissible_class (A : AdmissibleClass) : gateClosed A := by
+  exact A.gateWitness
+
+end BabylonianMathematicsTheoremCanonicalLaneLean
+end HautevilleHouse
